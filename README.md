@@ -1,16 +1,10 @@
-# Customer Churn Prediction & Retention Strategy Engine
-
-A Machine Learning system predicting customer churn and risk drivers using Python, XGBoost, and SHAP.
-
-## Project Overview
-Customer acquisition costs 5x more than customer retention. This project builds an end-to-end machine learning system that predicts which subscription customers are at high risk of canceling their service, identifies the primary risk drivers, and enables automated retention strategies.
-
-## Tech Stack
-* **Languages:** Python
-* **Libraries:** Pandas, NumPy, Scikit-Learn, XGBoost, SHAP, Matplotlib, Seaborn
-* **Techniques:** SMOTE (Class Imbalance), Feature Engineering, Hyperparameter Tuning, Explainable AI (XAI)
-
-## Model Performance
-* **Primary Model:** XGBoost Classifier
-* **ROC-AUC Score:** 0.89
-* **Recall:** 84% on high-risk churners
+├── data/                  # Synthetic or anonymized sensor data
+├── notebooks/
+│   ├── 01_data_cleaning_eda.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   └── 03_model_training_and_shap_xai.ipynb
+├── src/
+│   ├── inference.py       # Production-ready prediction script
+│   └── maintenance_model.pkl
+├── README.md              # Detailed project documentation
+└── requirements.txt
